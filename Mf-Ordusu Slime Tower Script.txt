@@ -1,0 +1,198 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({IntroText = "Mf-Ordusu",Name = "Mf-Ordusu", HidePremium = true, SaveConfig = true, ConfigFolder = "Sen Kullanmak Mf-Ordusu Yapmak Script"})
+local GameTab = Window:MakeTab({
+	Name = "Otomatik",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+GameTab:AddButton({
+	Name = "Otomatik Farm",
+	Callback = function()
+while wait(0.4) do
+local ohNumber1 = math.huge
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.GrabDrops:FireServer(ohNumber1)
+
+local ohNumber1 = 1
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.BuyDropper:FireServer(ohNumber1)
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.MergeDroppers:FireServer()
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.DepositDrops:FireServer()
+end
+  	end    
+})
+GameTab:AddParagraph("Uyari","Bunlari acarsan durdurmak icin cik gir yapiniz")
+GameTab:AddButton({
+	Name = "Otomatik Rate",
+	Callback = function()
+while wait(0.4) do
+local ohNumber1 = math.huge
+
+local ohNumber1 = 1
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.BuySpeed:FireServer(ohNumber1)
+end
+  	end    
+})
+local CharTab = Window:MakeTab({
+	Name = "Karakter",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local GameTab = Window:MakeTab({
+	Name = "Farm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local TargetWalkspeed
+CharTab:AddSlider({
+	Name = "Hiz",
+	Min = 0,
+	Max = 200,
+	Default = 10,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	Callback = function(Value)
+		TargetWalkspeed = Value
+	end    
+})
+GameTab:AddButton({
+	Name = "1. obby i bitir",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-305.378845, 33.8195953, -679.389771, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-288.210938, 57.6481628, -664.695618, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-270.459198, 57.6481628, -698.923218, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-310.380737, 73.8697891, -696.160767, 0.873105228, -0, -0.487531811, 0, 1, -0, 0.487531811, 0, 0.873105228)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-268.11261, 89.8179779, -683.04718, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-156.020767, 89.0117722, -681.904663, -4.82797623e-05, -0.992829025, -0.119543388, -1, 4.8160553e-05, 2.89455056e-06, 2.89455056e-06, 0.119543388, -0.992829084)
+  	end    
+})
+GameTab:AddButton({
+	Name = "2. obby i bitir",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-305.378845, 33.8195953, -679.389771, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-288.210938, 57.6481628, -664.695618, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-270.459198, 57.6481628, -698.923218, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-310.380737, 73.8697891, -696.160767, 0.873105228, -0, -0.487531811, 0, 1, -0, 0.487531811, 0, 0.873105228)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-268.11261, 89.8179779, -683.04718, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-172.180054, 89.8179779, -639.983887, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-140.455246, 120.48851, -449.946136, 0.993615985, -0, -0.112815037, 0, 1, -0, 0.112815037, 0, 0.993615985)
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-14.4436665, 119.721664, -482.966003, -1.1920929e-05, -0.310549676, -0.950557351, -1.00000024, 1.15036964e-05, 8.46385956e-06, 8.46385956e-06, 0.950557351, -0.310549855)
+  	end    
+})
+GameTab:AddButton({
+	Name = "Slimelarin Hepsini Topla",
+	Callback = function()
+local ohNumber1 = math.huge
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.GrabDrops:FireServer(ohNumber1)
+  	end    
+})
+GameTab:AddButton({
+	Name = "Slimelari deposit et",
+	Callback = function()
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.DepositDrops:FireServer()
+  	end    
+})
+GameTab:AddButton({
+	Name = "Slimelari Birlestir",
+	Callback = function()
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.MergeDroppers:FireServer()
+  	end    
+})
+GameTab:AddButton({
+	Name = "Rati Hizlandir",
+	Callback = function()
+local ohNumber1 = 1
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.BuySpeed:FireServer(ohNumber1)
+  	end    
+})
+GameTab:AddButton({
+	Name = "Slime al 1",
+	Callback = function()
+local ohNumber1 = 1
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.BuyDropper:FireServer(ohNumber1)
+  	end    
+})
+GameTab:AddButton({
+	Name = "Slime al 5",
+	Callback = function()
+local ohNumber1 = 5
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.BuyDropper:FireServer(ohNumber1)
+  	end    
+})
+GameTab:AddButton({
+	Name = "Slime al 25",
+	Callback = function()
+local ohNumber1 = 25
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.BuyDropper:FireServer(ohNumber1)
+  	end    
+})
+GameTab:AddButton({
+	Name = "Slime al 50",
+	Callback = function()
+local ohNumber1 = 50
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.BuyDropper:FireServer(ohNumber1)
+  	end    
+})
+GameTab:AddButton({
+	Name = "Slime al 100",
+	Callback = function()
+local ohNumber1 = 100
+
+game:GetService("ReplicatedStorage").GTycoonClient.Remotes.BuyDropper:FireServer(ohNumber1)
+  	end    
+})
+GameTab:AddParagraph("Uyari","Mf-Ordusu burdaydi")
+
+--Sa
+
+--As
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    pcall(function()
+        if game.Players.LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 then
+            game.Players.LocalPlayer.Character:TranslateBy(game.Players.LocalPlayer.Character.Humanoid.MoveDirection * TargetWalkspeed/50)
+        end
+    end)
+end)
+
+--naber tırrek
+
+local CreditsTab = Window:MakeTab({
+	Name = "Yapimci",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+CreditsTab:AddParagraph("Mf-Ordusu","Tsk kullandigin icin")
+
+CreditsTab:AddParagraph("Mf-Ordusu","Duzeltmeler vb")
+
+CreditsTab:AddParagraph("Discord invite","https://discord.gg/93ppq3pGuH")
+
+coroutine.resume(NotificationCoroutine)
+
+OrionLib:Init()
+
+task.wait(1)
